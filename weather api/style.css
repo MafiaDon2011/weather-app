@@ -13,6 +13,8 @@ body {
     background-position: center;
     background-size: cover;
     font-size: 120%;
+    flex-direction: column;
+    color: #FFFFFF;
 }
 
 
@@ -36,6 +38,16 @@ input.search-bar {
     width: 100%;
     max-width: 420px;
     margin: 1em;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+    .card {
+        max-width: 250px;
+    }
 }
 
 .search {
@@ -64,4 +76,15 @@ button:hover {
 
 h1.temp {
     margin: 0px;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
 }
