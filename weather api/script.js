@@ -1,5 +1,5 @@
 let weather = {
-    "apiKey": " API KEY GOES HERE ",
+    "apiKey": " API GOES HERE ",
     fetchWeather: function (city) {
         fetch(
           "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -23,7 +23,7 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°C"
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%"
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h"
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')" //changes the background image to display random image of city
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ name +","+ country +")" //changes the background image to display random image of city
         //console.log(name, icon, description, temp, humidity, speed)
      },
      search: function () {
